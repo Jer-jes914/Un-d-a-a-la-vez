@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Un día a la vez</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="contenedor">
+    <header class="barra">
+      <h1 class="marca">Un día a la vez</h1>
+      <button type="button" class="btn-ayuda" id="btn-ayuda">Necesito ayuda</button>
+    </header>
+
+    <section class="panel-estado" id="panel-estado" aria-label="Cómo está Sol"></section>
+
+    <main id="pantalla" class="tarjeta" aria-live="polite"></main>
+
+    <nav class="herramientas" aria-label="Herramientas para cuidarte">
+      <span class="herr-titulo">Herramientas</span>
+      <button type="button" class="herr" data-herramienta="respirar">Respirar</button>
+      <button type="button" class="herr" data-herramienta="anclar">Anclaje 5-4-3-2-1</button>
+      <button type="button" class="herr" data-herramienta="carta">Carta al yo del futuro</button>
+      <button type="button" class="herr" data-herramienta="diario">Diario</button>
+    </nav>
+
+    <footer class="pie">
+      <p>Este juego acompaña, pero no reemplaza a un profesional de la salud ni a un grupo de apoyo.</p>
+      <button type="button" class="enlace" id="btn-privacidad">Privacidad y datos</button>
+    </footer>
+  </div>
+
+  <noscript>Necesitas activar JavaScript para jugar.</noscript>
+
+  <script src="config.js"></script>
+  <script src="story.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
